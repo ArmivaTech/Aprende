@@ -1,0 +1,16 @@
+body{margin:0;background:#fff}
+a{color:#111}a:hover{color:#58A39E}
+*{box-sizing:border-box}
+details summary{cursor:pointer}
+#menu-cursos[hidden]{display:none!important}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #58A39E;outline-offset:2px}
+.propuesta{position:fixed;left:12px;bottom:12px;z-index:50;background:rgba(17,17,17,.85);color:#9EE5E3;font:600 12px/1.2 'Open Sans',Arial,sans-serif;padding:7px 12px;border-radius:100px;pointer-events:none}
+@media (max-width:760px){
+ h1{font-size:38px!important;line-height:1.1!important}
+ h2{font-size:30px!important}
+ #menu-cursos{position:fixed!important;left:12px!important;right:12px!important;top:140px!important;width:auto!important;max-width:none!important;grid-template-columns:1fr!important;max-height:70vh;overflow:auto}
+ form{padding:28px!important}
+ .propuesta{display:none}
+ a[href^="https://wa.me"]{font-size:0!important;padding:16px!important;gap:0!important;right:16px!important;bottom:16px!important}
+ a[href^="https://wa.me"] svg{width:26px;height:26px}
+}
