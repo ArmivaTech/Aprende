@@ -9,76 +9,94 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="web.css">
+<style>
+body{margin:0;background:#ffffff}
+a{color:#111111}a:hover{color:#58A39E}
+body{margin:0}
+@keyframes aac-ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.aac-ticker-track{animation:aac-ticker 38s linear infinite}
+@media (prefers-reduced-motion: reduce){.aac-ticker-track{animation:none}}
+@media (max-width:760px){.aac-logo{order:0!important;flex:1 1 auto!important;justify-content:flex-start!important}.aac-act{order:1!important;flex:0 0 auto!important}.aac-nav{order:2!important;flex:1 1 100%!important;font-size:13px!important}}
+body{margin:0}
+</style>
 </head>
 <body>
 
 <div style="font-family: 'Open Sans', Arial, sans-serif; background: #ffffff; min-width: 0; overflow-x: hidden">
 
-<div style="font-family: 'Open Sans', Arial, sans-serif; color: #111111; position: relative; z-index: 30">
-<div style="background: #111111; color: #9EE5E3; font-size: 14px; font-weight: 600">
-<div style="max-width: 1240px; margin: 0 auto; padding: 9px 24px; display: flex; flex-wrap: wrap; gap: 6px 20px; justify-content: center; text-align: center">
-<span>Formación en heridas para enfermeras y ATS · Presencial y online en directo</span>
+<div style="font-family: 'Open Sans', Arial, sans-serif; color: #ffffff; position: relative; z-index: 30">
+<!-- CINTA DE MENSAJES -->
+<div style="background: #9EE5E3; color: #111111; overflow: hidden; white-space: nowrap; font-family: Montserrat, Arial, sans-serif; font-weight: 800; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase">
+<div class="aac-ticker-track" style="display: inline-flex; gap: 40px; padding: 10px 0; width: max-content">
+<span>Mentoría Élite Wounds · acreditada con 9,8 créditos CFC</span><span aria-hidden="true">✦</span>
+<span>Heridas de 0 a 100 en 3 horas · 17 €</span><span aria-hidden="true">✦</span>
+<span>Todos los directos quedan grabados</span><span aria-hidden="true">✦</span>
+<span>Casos clínicos reales, sin paja</span><span aria-hidden="true">✦</span>
+<span aria-hidden="true">Mentoría Élite Wounds · acreditada con 9,8 créditos CFC</span><span aria-hidden="true">✦</span>
+<span aria-hidden="true">Heridas de 0 a 100 en 3 horas · 17 €</span><span aria-hidden="true">✦</span>
+<span aria-hidden="true">Todos los directos quedan grabados</span><span aria-hidden="true">✦</span>
+<span aria-hidden="true">Casos clínicos reales, sin paja</span><span aria-hidden="true">✦</span>
 </div>
 </div>
-<header style="background: #ffffff; position: relative; box-shadow: 0 1px 0 #E6F4F3">
-<div style="max-width: 1240px; margin: 0 auto; padding: 10px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 32px">
-<a aria-label="Aprende a Curar, inicio" href="index.html" style="display: flex; align-items: center">
-<img alt="Logo de Aprende a Curar" src="logo_cabecera.png" style="height: 68px; width: auto; display: block"/>
-</a>
-<nav aria-label="Menú principal" style="flex: 1 1 420px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; font-weight: 600; font-size: 15px">
-<a href="index.html" style="color: #111111; text-decoration: none; padding: 12px 14px; border-radius: 100px; background: transparent">Inicio</a>
+<!-- CABECERA NEGRA -->
+<header style="background: #111111; position: relative; border-bottom: 1px solid rgba(158,229,227,0.18)">
+<div style="max-width: 1320px; margin: 0 auto; padding: 12px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px 24px">
+<nav aria-label="Menú principal" class="aac-nav" style="order: 1; flex: 1 1 360px; display: flex; flex-wrap: wrap; align-items: center; gap: 2px 4px; font-weight: 700; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase">
 <div style="position: relative">
-<button aria-controls="menu-cursos" aria-expanded="false" data-toggle-menu="" style="font: inherit; font-weight: 600; color: #111111; background: #E6F7F6; border: 0; border-radius: 100px; padding: 12px 14px; display: flex; align-items: center; gap: 6px; cursor: pointer; min-height: 44px" type="button">
+<button aria-controls="menu-cursos" aria-expanded="false" data-toggle-menu="" style="font: inherit; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #9EE5E3; background: transparent; border: 0; padding: 12px 12px; display: flex; align-items: center; gap: 6px; cursor: pointer; min-height: 44px" type="button">
 Cursos
-<svg aria-hidden="true" fill="none" height="14" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="14"><polyline points="6 9 12 15 18 9"></polyline></svg>
+<svg aria-hidden="true" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" width="14"><polyline points="6 9 12 15 18 9"></polyline></svg>
 </button>
-<div hidden="" id="menu-cursos" style="position: absolute; top: 56px; left: -16px; width: 780px; max-width: 92vw; background: #ffffff; border-radius: 20px; box-shadow: 0 24px 60px rgba(17,17,17,0.18); padding: 18px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; border-top: 5px solid #72C1BD">
-<a href="curso-express.html" style="display: flex; gap: 14px; align-items: center; text-decoration: none; padding: 10px; border-radius: 14px; background: #F2FBFB">
+<div hidden="" id="menu-cursos" style="position: absolute; top: 58px; left: -12px; width: 820px; max-width: 92vw; background: #ffffff; color: #111111; border-radius: 22px; box-shadow: 0 30px 70px rgba(0,0,0,0.45); padding: 18px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; border-top: 6px solid #9EE5E3; text-transform: none; letter-spacing: 0">
+<a href="curso-express.html" style="display: flex; gap: 14px; align-items: center; text-decoration: none; padding: 10px; border-radius: 16px; background: #F2FBFB">
 <img alt="" src="express.jpg" style="width: 64px; height: 80px; object-fit: cover; border-radius: 10px; flex: none"/>
 <span style="display: flex; flex-direction: column; gap: 2px">
-<span style="color: #111111; font-weight: 700; font-size: 15px">Aprende a Curar EXPRESS</span>
+<span style="color: #111111; font-weight: 800; font-size: 15px">Aprende a Curar EXPRESS</span>
 <span style="color: #666666; font-weight: 500; font-size: 13px">Presencial · 1 día</span>
 <span style="color: #111111; font-weight: 800; font-size: 15px">97 €</span>
 </span>
 </a>
-<a href="curso-elite.html" style="display: flex; gap: 14px; align-items: center; text-decoration: none; padding: 10px; border-radius: 14px; background: #F2FBFB">
+<a href="curso-elite.html" style="display: flex; gap: 14px; align-items: center; text-decoration: none; padding: 10px; border-radius: 16px; background: #F2FBFB">
 <img alt="" src="elite.jpg" style="width: 64px; height: 80px; object-fit: cover; border-radius: 10px; flex: none"/>
 <span style="display: flex; flex-direction: column; gap: 2px">
-<span style="color: #111111; font-weight: 700; font-size: 15px">Mentoría Formativa Élite Wounds</span>
+<span style="color: #111111; font-weight: 800; font-size: 15px">Mentoría Formativa Élite Wounds</span>
 <span style="color: #666666; font-weight: 500; font-size: 13px">Online · 4 meses · 9,8 créditos CFC</span>
 <span style="color: #111111; font-weight: 800; font-size: 15px"><del style="color: #666666; font-weight: 500">200 €</del> 97 €</span>
 </span>
 </a>
-<a href="curso-360.html" style="display: flex; gap: 14px; align-items: center; text-decoration: none; padding: 10px; border-radius: 14px; background: #F2FBFB">
+<a href="curso-360.html" style="display: flex; gap: 14px; align-items: center; text-decoration: none; padding: 10px; border-radius: 16px; background: #F2FBFB">
 <img alt="" src="f360.jpg" style="width: 64px; height: 80px; object-fit: cover; border-radius: 10px; flex: none"/>
 <span style="display: flex; flex-direction: column; gap: 2px">
-<span style="color: #111111; font-weight: 700; font-size: 15px">Formación 360º en el tratamiento de heridas</span>
+<span style="color: #111111; font-weight: 800; font-size: 15px">Formación 360º en el tratamiento de heridas</span>
 <span style="color: #666666; font-weight: 500; font-size: 13px">Online en directo · grabación 3 meses</span>
 <span style="color: #111111; font-weight: 800; font-size: 15px"><del style="color: #666666; font-weight: 500">57 €</del> 17 €</span>
 </span>
 </a>
-<a href="curso-0a100.html" style="display: flex; gap: 14px; align-items: center; text-decoration: none; padding: 10px; border-radius: 14px; background: #F2FBFB">
+<a href="curso-0a100.html" style="display: flex; gap: 14px; align-items: center; text-decoration: none; padding: 10px; border-radius: 16px; background: #F2FBFB">
 <img alt="" src="h0a100.jpg" style="width: 64px; height: 80px; object-fit: cover; border-radius: 10px; flex: none"/>
 <span style="display: flex; flex-direction: column; gap: 2px">
-<span style="color: #111111; font-weight: 700; font-size: 15px">Heridas de 0 a 100… en 3 horas</span>
+<span style="color: #111111; font-weight: 800; font-size: 15px">Heridas de 0 a 100… en 3 horas</span>
 <span style="color: #666666; font-weight: 500; font-size: 13px">Online en directo · 3 horas</span>
 <span style="color: #111111; font-weight: 800; font-size: 15px"><del style="color: #666666; font-weight: 500">57 €</del> 17 €</span>
 </span>
 </a>
 <div style="grid-column: 1 / -1; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; padding: 8px 6px 0; font-size: 14px">
 <span style="color: #666666">Seminarios online: <strong style="color: #111111">próximamente</strong></span>
-<a href="index.html" style="color: #111111; font-weight: 700">Ver todos los cursos →</a>
+<a href="index.html" style="color: #111111; font-weight: 800">Ver todos los cursos →</a>
 </div>
 </div>
 </div>
-<a href="sobre-nosotros.html" style="color: #111111; text-decoration: none; padding: 12px 14px; border-radius: 100px; background: transparent">Sobre nosotros</a>
-<a href="contacto.html" style="color: #111111; text-decoration: none; padding: 12px 14px; border-radius: 100px; background: transparent">Contacto</a>
+<a href="sobre-nosotros.html" style="color: #ffffff; text-decoration: none; padding: 12px 12px">Quiénes somos</a>
+<a href="contacto.html" style="color: #ffffff; text-decoration: none; padding: 12px 12px">Contacto</a>
 </nav>
-<div style="display: flex; align-items: center; gap: 12px">
-<a aria-label="Carrito" href="https://www.aprendeacurar.com/carrito/" style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 100px; background: #F2FBFB">
-<svg aria-hidden="true" fill="none" height="20" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"></path></svg>
+<a aria-label="Aprende a Curar, inicio" class="aac-logo" href="index.html" style="order: 2; display: flex; align-items: center; justify-content: center; flex: 0 0 auto">
+<img alt="Logo de Aprende a Curar" src="imagotipo_blanco.png" style="height: 56px; width: auto; display: block"/>
 </a>
-<button data-toggle-menu="" style="font: inherit; background: #72C1BD; color: #111111; border: 0; cursor: pointer; font-weight: 700; font-size: 15px; padding: 12px 26px; border-radius: 100px; min-height: 44px" type="button">Ver cursos</button>
+<div class="aac-act" style="order: 3; flex: 1 1 260px; display: flex; align-items: center; justify-content: flex-end; gap: 10px">
+<a aria-label="Carrito" href="https://www.aprendeacurar.com/carrito/" style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 100px; border: 1px solid rgba(255,255,255,0.25)">
+<svg aria-hidden="true" fill="none" height="20" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"></path></svg>
+</a>
+<button data-toggle-menu="" style="font: inherit; background: #9EE5E3; color: #111111; border: 0; cursor: pointer; font-family: Montserrat, Arial, sans-serif; font-weight: 800; font-size: 14px; letter-spacing: 0.06em; text-transform: uppercase; padding: 13px 24px; border-radius: 100px; min-height: 44px" type="button">Ver cursos</button>
 </div>
 </div>
 </header>
@@ -272,50 +290,70 @@ Cursos
 </div>
 
 
-<div style="font-family: 'Open Sans', Arial, sans-serif; color: #111111; font-size: 15px; line-height: 1.6">
-<footer style="background: #72C1BD; color: #111111">
-<div style="max-width: 1240px; margin: 0 auto; padding: 56px 24px 24px; display: flex; flex-direction: column; gap: 36px">
+<div style="font-family: 'Open Sans', Arial, sans-serif; color: #ffffff; font-size: 15px; line-height: 1.6; background: #111111">
+<!-- FRANJA DE GARANTÍAS -->
+<section aria-label="Por qué con nosotros" style="background: #111111; border-top: 1px solid rgba(158,229,227,0.2); border-bottom: 1px solid rgba(158,229,227,0.2)">
+<div style="max-width: 1320px; margin: 0 auto; padding: 36px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
+<div style="display: flex; gap: 14px; align-items: flex-start">
+<svg aria-hidden="true" fill="none" height="30" stroke="#9EE5E3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="flex: none" viewbox="0 0 24 24" width="30"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect height="14" rx="2" width="15" x="1" y="5"></rect></svg>
+<span style="display: flex; flex-direction: column; line-height: 1.4"><strong style="font-family: Montserrat, Arial, sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 14px">Directos grabados</strong><span style="color: #CFCFCF; font-size: 14px">Repite la clase cuando quieras.</span></span>
+</div>
+<div style="display: flex; gap: 14px; align-items: flex-start">
+<svg aria-hidden="true" fill="none" height="30" stroke="#9EE5E3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="flex: none" viewbox="0 0 24 24" width="30"><circle cx="12" cy="8" r="6"></circle><path d="M8.2 13.3 7 22l5-3 5 3-1.2-8.7"></path></svg>
+<span style="display: flex; flex-direction: column; line-height: 1.4"><strong style="font-family: Montserrat, Arial, sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 14px">9,8 créditos CFC</strong><span style="color: #CFCFCF; font-size: 14px">En la mentoría Élite Wounds.</span></span>
+</div>
+<div style="display: flex; gap: 14px; align-items: flex-start">
+<svg aria-hidden="true" fill="none" height="30" stroke="#9EE5E3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="flex: none" viewbox="0 0 24 24" width="30"><polyline points="1 4 1 10 7 10"></polyline><path d="M3.5 15a9 9 0 1 0 2.1-9.4L1 10"></path></svg>
+<span style="display: flex; flex-direction: column; line-height: 1.4"><strong style="font-family: Montserrat, Arial, sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 14px">¿No puedes ir? Te devolvemos el dinero</strong><span style="color: #CFCFCF; font-size: 14px">En el EXPRESS, hasta la fecha límite.</span></span>
+</div>
+<div style="display: flex; gap: 14px; align-items: flex-start">
+<svg aria-hidden="true" fill="none" height="30" stroke="#9EE5E3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="flex: none" viewbox="0 0 24 24" width="30"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"></path></svg>
+<span style="display: flex; flex-direction: column; line-height: 1.4"><strong style="font-family: Montserrat, Arial, sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 14px">Enfermeros al otro lado</strong><span style="color: #CFCFCF; font-size: 14px">Escríbenos por WhatsApp.</span></span>
+</div>
+</div>
+</section>
+<footer style="background: #111111">
+<div style="max-width: 1320px; margin: 0 auto; padding: 56px 24px 28px; display: flex; flex-direction: column; gap: 40px">
 <div style="display: flex; flex-wrap: wrap; gap: 36px 48px">
 <div style="flex: 2 1 280px; display: flex; flex-direction: column; gap: 12px">
-<a aria-label="Aprende a Curar, inicio" href="index.html"><img alt="Aprende a Curar" src="imagotipo_blanco.png" style="width: 190px; height: auto; display: block"/></a>
-<p style="margin: 0; max-width: 360px">Formación especializada en el tratamiento de heridas para enfermeras y ATS.</p>
-<span>Calle Benejama 51, 03207 Elche (Alicante)</span>
-<a href="https://www.instagram.com/aprendeacurar/" style="align-self: flex-start; display: flex; align-items: center; gap: 8px; color: #111111; font-weight: 700; text-decoration: none; min-height: 44px">
-<svg aria-hidden="true" fill="none" height="22" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"><rect height="20" rx="5" width="20" x="2" y="2"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>
+<a aria-label="Aprende a Curar, inicio" href="index.html" style="align-self: flex-start"><img alt="Aprende a Curar" src="imagotipo_blanco.png" style="width: 180px; height: auto; display: block"/></a>
+<p style="margin: 0; max-width: 360px; color: #CFCFCF">Formación en heridas para enfermeras y ATS. Porque somos personas que tratamos personas.</p>
+<span style="color: #CFCFCF">Calle Benejama 51, 03207 Elche (Alicante)</span>
+<a href="https://www.instagram.com/aprendeacurar/" style="align-self: flex-start; display: flex; align-items: center; gap: 8px; color: #9EE5E3; font-weight: 800; text-decoration: none; min-height: 44px">
+<svg aria-hidden="true" fill="none" height="22" stroke="#9EE5E3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"><rect height="20" rx="5" width="20" x="2" y="2"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1"></circle></svg>
 @aprendeacurar</a>
 </div>
 <nav aria-label="Cursos" style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 8px">
-<strong>Cursos</strong>
-<a href="curso-express.html" style="color: #111111">Aprende a Curar EXPRESS</a>
-<a href="curso-elite.html" style="color: #111111">Mentoría Élite Wounds</a>
-<a href="curso-360.html" style="color: #111111">Formación 360º</a>
-<a href="curso-0a100.html" style="color: #111111">Heridas de 0 a 100</a>
+<strong style="font-family: Montserrat, Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.06em; font-size: 13px; color: #9EE5E3">Cursos</strong>
+<a href="curso-express.html" style="color: #ffffff">Aprende a Curar EXPRESS</a>
+<a href="curso-elite.html" style="color: #ffffff">Mentoría Élite Wounds</a>
+<a href="curso-360.html" style="color: #ffffff">Formación 360º</a>
+<a href="curso-0a100.html" style="color: #ffffff">Heridas de 0 a 100</a>
 </nav>
 <nav aria-label="Aprende a Curar" style="flex: 1 1 170px; display: flex; flex-direction: column; gap: 8px">
-<strong>Aprende a Curar</strong>
-<a href="index.html" style="color: #111111">Inicio</a>
-<a href="sobre-nosotros.html" style="color: #111111">Sobre nosotros</a>
-<a href="contacto.html" style="color: #111111">Contacto</a>
-<a href="tel:+34630352384" style="color: #111111">630 352 384</a>
-<a href="mailto:info@aprendeacurar.com" style="color: #111111">info@aprendeacurar.com</a>
+<strong style="font-family: Montserrat, Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.06em; font-size: 13px; color: #9EE5E3">Aprende a Curar</strong>
+<a href="index.html" style="color: #ffffff">Inicio</a>
+<a href="sobre-nosotros.html" style="color: #ffffff">Quiénes somos</a>
+<a href="contacto.html" style="color: #ffffff">Contacto</a>
+<a href="tel:+34630352384" style="color: #ffffff">630 352 384</a>
+<a href="mailto:info@aprendeacurar.com" style="color: #ffffff">info@aprendeacurar.com</a>
 </nav>
 <nav aria-label="Legal" style="flex: 1 1 170px; display: flex; flex-direction: column; gap: 8px">
-<strong>Legal</strong>
-<a href="https://www.aprendeacurar.com/aviso-legal/" style="color: #111111">Aviso legal</a>
-<a href="https://www.aprendeacurar.com/politica-de-cookies/" style="color: #111111">Política de cookies</a>
-<a href="https://www.aprendeacurar.com/politica-de-privacidad/" style="color: #111111">Política de privacidad</a>
-<a href="https://www.aprendeacurar.com/terminos-y-condiciones/" style="color: #111111">Términos y condiciones</a>
-<a href="https://www.aprendeacurar.com/reembolso_devoluciones/" style="color: #111111">Política de devoluciones</a>
-<span style="align-self: flex-start; background: #FFF4C2; border: 2px dashed #B58900; color: #4D3A00; border-radius: 6px; padding: 2px 8px; font-size: 12px; font-weight: 600">Enlazar a las páginas legales existentes</span>
+<strong style="font-family: Montserrat, Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.06em; font-size: 13px; color: #9EE5E3">Legal</strong>
+<a href="https://www.aprendeacurar.com/aviso-legal/" style="color: #ffffff">Aviso legal</a>
+<a href="https://www.aprendeacurar.com/politica-de-cookies/" style="color: #ffffff">Política de cookies</a>
+<a href="https://www.aprendeacurar.com/politica-de-privacidad/" style="color: #ffffff">Política de privacidad</a>
+<a href="https://www.aprendeacurar.com/terminos-y-condiciones/" style="color: #ffffff">Términos y condiciones</a>
+<a href="https://www.aprendeacurar.com/reembolso_devoluciones/" style="color: #ffffff">Política de devoluciones</a>
 </nav>
 </div>
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; border-top: 1px solid rgba(17,17,17,0.2); padding-top: 18px; font-size: 13px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; border-top: 1px solid rgba(255,255,255,0.15); padding-top: 18px; font-size: 13px; color: #CFCFCF">
 <span>Copyright © 2026 Aprende a Curar</span>
 <span style="background: #FFF4C2; border: 2px dashed #B58900; color: #4D3A00; border-radius: 6px; padding: 4px 10px; font-size: 12px; font-weight: 600">Logo Kit Digital (mantener el actual)</span>
 </div>
 </div>
 </footer>
-<a aria-label="Abrir chat de WhatsApp (plugin actual de la web)" href="https://wa.me/34630352384" style="position: fixed; right: 24px; bottom: 24px; z-index: 40; display: flex; align-items: center; gap: 10px; background: #25D366; color: #111111; text-decoration: none; font-weight: 700; font-size: 15px; padding: 14px 22px; border-radius: 100px; box-shadow: 0 10px 28px rgba(17,17,17,0.25)">
+<a aria-label="Abrir chat de WhatsApp" href="https://wa.me/34630352384" style="position: fixed; right: 24px; bottom: 24px; z-index: 40; display: flex; align-items: center; gap: 10px; background: #25D366; color: #111111; text-decoration: none; font-weight: 800; font-size: 15px; padding: 14px 22px; border-radius: 100px; box-shadow: 0 10px 28px rgba(0,0,0,0.35)">
 <svg aria-hidden="true" fill="none" height="22" stroke="#111111" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="22"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"></path></svg>
 ¿Tienes dudas? Escríbenos</a>
 </div>
